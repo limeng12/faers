@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <File name="A1" fileName="faers.log.trace.txt" append="false">
+      <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </File>
+    
+    <File name="A2" fileName="faers.log.info.txt" append="false">
+          <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </File>
+    
+    <File name="A3" fileName="faers.log.error.txt" append="true">
+              <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </File>
+    
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+  
+    <Logger name="trace" level="trace">
+      <AppenderRef ref="A1"/>
+    </Logger>
+    
+    <Logger name="info" level="debug">
+          <AppenderRef ref="A2"/>
+    </Logger>
+    
+    <Logger name="error" level="error">
+    	<AppenderRef ref="A3"/>
+    </Logger>
+    
+    <Root level="debug">
+      <AppenderRef ref="STDOUT"/>
+
+    </Root>
+  </Loggers>
+</Configuration>

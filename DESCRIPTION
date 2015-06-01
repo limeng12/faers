@@ -1,0 +1,10 @@
+Package: faers
+Type: Package
+Title: FAERS analysis (short line)
+Version: 1.0
+Date: 2015-06-01
+Author: Meng Li
+Maintainer:  <331060295@qq.com>
+Description: connect to faers
+Depends: R (>= 3.0.0), rJava
+License: free

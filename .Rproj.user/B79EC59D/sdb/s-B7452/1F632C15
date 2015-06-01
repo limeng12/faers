@@ -1,0 +1,17 @@
+{
+    "contents" : "connect<-function(){\n  #path=\"/home/limeng/workspace/DrugAnalysis/\";\n  path=system.file(package = \"faers\");\n  init<-function(){\n    .jinit()\n    isInit<-TRUE;\n    .jaddClassPath(dir( paste(path,\"/faers/\",sep=\"\"), full.names=TRUE ) );\n    .jaddClassPath(paste(path,\"/faers.jar\",sep=\"\") );\n  }\n  \n  isInit<-FALSE\n  \n  if(!isInit)\n    init();\n  \n  J(\"main.ccbb.faers.core.DatabaseConnect\")$setMysqlConnector( \"rdc04.uits.iu.edu:3080\",\"wxy\",\"wxy\",\"drug\");\n  \n}",
+    "created" : 1433192521292.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2264158390",
+    "id" : "1F632C15",
+    "lastKnownWriteTime" : 1433193818,
+    "path" : "~/drugAE/faers/R/connect.R",
+    "project_path" : "R/connect.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

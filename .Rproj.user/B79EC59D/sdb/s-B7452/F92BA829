@@ -1,0 +1,16 @@
+{
+    "contents" : "\ngetIntersectDrugNames<-function(inputDrugNames){\n  search<-J(\"main.ccbb.faers.core.Search\")$getInstance();\n  cat( (search %instanceof% \"main.ccbb.faers.core.Search\") );\n  \n  drugNames<-.jnew(\"java.util.ArrayList\");\n  #drugNames$add(\"LEPIRUDIN\");\t#drugNames$add(\"CETUXIMAB\");\n  \n  for(i in 1:length(inputDrugNames) ) {\n    drugNames$add(inputDrugNames[i]);\n  }\n  \n  result<-search$intersectionSearchDrugsSIRUsingDrugBank(drugNames);\n  \n  isrs<-sapply( result, function(item) item$intValue() );\n  return(isrs);\n  \n}\n",
+    "created" : 1433191834912.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "477097678",
+    "id" : "F92BA829",
+    "lastKnownWriteTime" : 1433192549,
+    "path" : "~/drugAE/faers/R/faers.R",
+    "project_path" : "R/faers.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: faers\nType: Package\nTitle: FAERS analysis (short line)\nVersion: 1.0\nDate: 2015-06-01\nAuthor: Meng Li\nMaintainer:  <331060295@qq.com>\nDescription: connect to faers\nDepends: R (>= 3.0.0), rJava\nLicense: free\n",
+    "created" : 1433192649662.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3806115020",
+    "id" : "BF72BB93",
+    "lastKnownWriteTime" : 1433193206,
+    "path" : "~/drugAE/faers/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}

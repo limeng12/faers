@@ -1,0 +1,7 @@
+*.class
+/projects/
+/test/
+
+# Package Files #
+
+
