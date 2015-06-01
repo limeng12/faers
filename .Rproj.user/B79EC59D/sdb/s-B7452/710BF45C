@@ -1,12 +1,12 @@
 {
-    "contents" : "\ngenericCallLI<-function(inputNames,functionName){\n  search<-J(\"main.ccbb.faers.core.Search\")$getInstance();\n  cat( (search %instanceof% \"main.ccbb.faers.core.Search\") );\n  \n  names<-.jnew(\"java.util.ArrayList\");\n  #drugNames$add(\"LEPIRUDIN\");  #drugNames$add(\"CETUXIMAB\");\n  \n  for(i in 1:length(inputNames) ) {\n    names$add(inputNames[i]);\n  }\n  \n  #result<-search$intersectionSearchDrugsSIRUsingDrugBank(names);\n  result<-eval( parse(text=paste(\"search$\",functionName,\"(names)\",sep=\"\") )  );\n  \n  isrs<-sapply( result, function(item) item$intValue() );\n  \n  return(isrs);\n  \n}\n\n",
+    "contents" : "\ngenericCallLI<-function(inputNames,functionName){\n  search<-J(\"main.ccbb.faers.core.Search\")$getInstance();\n  cat( (search %instanceof% \"main.ccbb.faers.core.Search\") );\n  \n  names<-.jnew(\"java.util.ArrayList\");\n  #drugNames$add(\"LEPIRUDIN\");  #drugNames$add(\"CETUXIMAB\");\n  \n  for(i in 1:length(inputNames) ) {\n    names$add(inputNames[i]);\n  }\n  \n  #result<-search$intersectionSearchDrugsSIRUsingDrugBank(names);\n  result<-eval( parse(text=paste(\"search$\",functionName,\"(names)\",sep=\"\") )  );\n  \n  isrs<-sapply( result, function(item) item$intValue() );\n  \n  return(isrs);\n  \n}\n\ngenericCallSI<-function(inputName,functionName){\n  search<-J(\"main.ccbb.faers.core.Search\")$getInstance();\n  cat( (search %instanceof% \"main.ccbb.faers.core.Search\") );\n  \n  names<-.jnew(\"java.util.ArrayList\");\n  #drugNames$add(\"LEPIRUDIN\");  #drugNames$add(\"CETUXIMAB\");\n  \n  for(i in 1:length(inputNames) ) {\n    names$add(inputNames[i]);\n  }\n  \n  #result<-search$intersectionSearchDrugsSIRUsingDrugBank(names);\n  result<-eval( parse(text=paste(\"search$\",functionName,\"(names)\",sep=\"\") )  );\n  \n  isrs<-sapply( result, function(item) item$intValue() );\n  \n  return(isrs);\n  \n}",
     "created" : 1433197042768.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1217210145",
+    "hash" : "1215763355",
     "id" : "710BF45C",
-    "lastKnownWriteTime" : 1433197870,
+    "lastKnownWriteTime" : 1433201763,
     "path" : "~/drugAE/faers/R/genericCall.R",
     "project_path" : "R/genericCall.R",
     "properties" : {

@@ -23,3 +23,15 @@ getAdeUnionIsr<-function(inputDrugNames){
   return(genericCallLI(inputDrugNames,"unionSearchIsrUsingMeddra"));
   
 }
+
+getDrugIsrsMiddleTable<-function(inputDrugName){
+  
+  return(genericCallSI(inputDrugName,"getIsrsFromDrugBankDrugNameMiddle"));
+  
+}
+
+getDrugIsrs<-function(inputDrugName){
+  
+  return(genericCallSI(inputDrugName,"getIsrsFromDrugBankDrugName"));
+  
+}
