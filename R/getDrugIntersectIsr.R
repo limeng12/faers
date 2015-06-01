@@ -26,12 +26,12 @@ getAdeUnionIsr<-function(inputDrugNames){
 
 getDrugIsrsMiddleTable<-function(inputDrugName){
   
-  return(genericCallSI(inputDrugName,"getIsrsFromDrugBankDrugNameMiddle"));
+  return(genericCallSI(inputDrugName,"searchEn$getIsrsFromDrugBankDrugNameMiddle"));
   
 }
 
 getDrugIsrs<-function(inputDrugName){
   
-  return(genericCallSI(inputDrugName,"getIsrsFromDrugBankDrugName"));
+  return(genericCallSI(inputDrugName,"searchEn$getIsrsFromDrugBankDrugName"));
   
 }
