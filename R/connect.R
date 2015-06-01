@@ -16,3 +16,4 @@ connect<-function(){
   J("main.ccbb.faers.core.DatabaseConnect")$setMysqlConnector( "rdc04.uits.iu.edu:3080","wxy","wxy","drug");
   
 }
+

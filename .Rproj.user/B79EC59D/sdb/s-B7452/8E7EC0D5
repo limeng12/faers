@@ -1,12 +1,12 @@
 {
-    "contents" : "\ngetDrugIntersectIsr<-function(inputDrugNames){\n  search<-J(\"main.ccbb.faers.core.Search\")$getInstance();\n  cat( (search %instanceof% \"main.ccbb.faers.core.Search\") );\n  \n  drugNames<-.jnew(\"java.util.ArrayList\");\n  #drugNames$add(\"LEPIRUDIN\");  #drugNames$add(\"CETUXIMAB\");\n  \n  for(i in 1:length(inputDrugNames) ) {\n    drugNames$add(inputDrugNames[i]);\n  }\n  \n  result<-search$intersectionSearchDrugsSIRUsingDrugBank(drugNames);\n  \n  isrs<-sapply( result, function(item) item$intValue() );\n  return(isrs);\n  \n}",
+    "contents" : "\ngetDrugIntersectIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"intersectionSearchDrugsSIRUsingDrugBank\"));\n  \n}\n\ngetDrugUnionIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"unionSearchIsrUsingDrugbank\"));\n  \n}\n\n\ngetADEIntersectIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"intersectionSearchADEsUsingMedDRA\"));\n  \n}\n\ngetAdeUnionIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"unionSearchIsrUsingMeddra\"));\n  \n}",
     "created" : 1433192554711.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3231615418",
+    "hash" : "1395512845",
     "id" : "8E7EC0D5",
-    "lastKnownWriteTime" : 1433192594,
+    "lastKnownWriteTime" : 1433197878,
     "path" : "~/drugAE/faers/R/getDrugIntersectIsr.R",
     "project_path" : "R/getDrugIntersectIsr.R",
     "properties" : {

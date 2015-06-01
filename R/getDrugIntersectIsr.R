@@ -1,18 +1,25 @@
 
 getDrugIntersectIsr<-function(inputDrugNames){
-  search<-J("main.ccbb.faers.core.Search")$getInstance();
-  cat( (search %instanceof% "main.ccbb.faers.core.Search") );
   
-  drugNames<-.jnew("java.util.ArrayList");
-  #drugNames$add("LEPIRUDIN");  #drugNames$add("CETUXIMAB");
+  return(genericCallLI(inputDrugNames,"intersectionSearchDrugsSIRUsingDrugBank"));
   
-  for(i in 1:length(inputDrugNames) ) {
-    drugNames$add(inputDrugNames[i]);
-  }
+}
+
+getDrugUnionIsr<-function(inputDrugNames){
   
-  result<-search$intersectionSearchDrugsSIRUsingDrugBank(drugNames);
+  return(genericCallLI(inputDrugNames,"unionSearchIsrUsingDrugbank"));
   
-  isrs<-sapply( result, function(item) item$intValue() );
-  return(isrs);
+}
+
+
+getADEIntersectIsr<-function(inputDrugNames){
+  
+  return(genericCallLI(inputDrugNames,"intersectionSearchADEsUsingMedDRA"));
+  
+}
+
+getAdeUnionIsr<-function(inputDrugNames){
+  
+  return(genericCallLI(inputDrugNames,"unionSearchIsrUsingMeddra"));
   
 }
