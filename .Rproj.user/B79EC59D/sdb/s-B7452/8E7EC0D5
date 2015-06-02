@@ -1,12 +1,12 @@
 {
-    "contents" : "\ngetDrugIntersectIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"intersectionSearchDrugsSIRUsingDrugBank\"));\n  \n}\n\ngetDrugUnionIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"unionSearchIsrUsingDrugbank\"));\n  \n}\n\n\ngetADEIntersectIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"intersectionSearchADEsUsingMedDRA\"));\n  \n}\n\ngetAdeUnionIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"unionSearchIsrUsingMeddra\"));\n  \n}\n\ngetDrugIsrsMiddleTable<-function(inputDrugName){\n  \n  return(genericCallSI(inputDrugName,\"searchEn$getIsrsFromDrugBankDrugNameMiddle\"));\n  \n}\n\ngetDrugIsrs<-function(inputDrugName){\n  \n  return(genericCallSI(inputDrugName,\"searchEn$getIsrsFromDrugBankDrugName\"));\n  \n}",
+    "contents" : "\ngetDrugIntersectIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"intersectionSearchDrugsSIRUsingDrugBank\"));\n  \n}\n\ngetDrugUnionIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"unionSearchIsrUsingDrugbank\"));\n  \n}\n\n\ngetADEIntersectIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"intersectionSearchADEsUsingMedDRA\"));\n  \n}\n\ngetAdeUnionIsr<-function(inputDrugNames){\n  \n  return(genericCallLI(inputDrugNames,\"unionSearchIsrUsingMeddra\"));\n  \n}\n\ngetDrugIsrsMiddleTable<-function(inputDrugName){\n  \n  return(genericCallSI(inputDrugName,\"searchEn$getIsrsFromDrugBankDrugNameMap\"));\n  \n}\n\ngetDrugIsrs<-function(inputDrugName){\n  \n  return(genericCallSI(inputDrugName,\"searchEn$getIsrsFromDrugBankDrugName\"));\n  \n}",
     "created" : 1433192554711.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4248596008",
+    "hash" : "53083471",
     "id" : "8E7EC0D5",
-    "lastKnownWriteTime" : 1433202824,
+    "lastKnownWriteTime" : 1433203411,
     "path" : "~/drugAE/faers/R/getDrugIntersectIsr.R",
     "project_path" : "R/getDrugIntersectIsr.R",
     "properties" : {
