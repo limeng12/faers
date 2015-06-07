@@ -24,7 +24,6 @@ genericCallSI<-function(inputName,functionName){
   cat( (search %instanceof% "main.ccbb.faers.core.Search") );
   
   
-  
   #result<-search$intersectionSearchDrugsSIRUsingDrugBank(names);
   result<-eval( parse(text=paste("search$",functionName,"(inputName)",sep="") )  );
   
@@ -33,3 +32,8 @@ genericCallSI<-function(inputName,functionName){
   return(isrs);
   
 }
+
+genericCallV<-function(functionName){
+
+
+

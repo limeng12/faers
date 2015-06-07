@@ -1,0 +1,62 @@
+#parameters for database
+user=root
+password=vas40ue
+host=rdc04.uits.iu.edu:3080
+database=drug
+
+#user=
+#password=
+#host=
+#database=
+
+
+#parameters for PSO
+variance=0.01
+delta=2
+numPar=30
+numIter=500
+maxVecility=0.1
+weight = 2
+weightMin=0.01
+c1 = 1
+c2 = 3
+numberOfParticlesUpdate=4
+portionOfParclesToUpdatePremature=0.2
+
+
+#parameters for linearSearch
+LinearSearchIterationNumber=100
+minStep=0.001
+alpha=20
+initVariables=0.5,0.1,0.01,0.3
+
+
+#Optimization method and PSO method mapping, just for annotation
+#"RR" -> "main.ccbb.faers.methods.RR"
+#"DoMouchel" -> "main.ccbb.faers.methods.DoMouchelMethod"
+#"Poisson" -> "main.ccbb.faers.methods.Poisson"
+#"Pengyue" -> "main.ccbb.faers.methods.PengyueMethod"
+#"LFDRPengyue" -> "main.ccbb.faers.methods.LFDRPengyue"
+#
+#"LinearSearch" -> "main.ccbb.faers.methods.LinearSearch"
+#"PSO" -> "main.ccbb.faers.methods.PSO"
+
+optimization=LinearSearch
+methods=RR,Poisson,DoMouchel,Pengyue,LFDRPengyue
+
+withDrawnFlag=a
+INDI=T
+
+
+#Parameters below are just for FAERS System logging
+
+drugBankPath = /home/limeng/drugAE/drugData/drugbank.xml
+medDRADir = /home/limeng/drugAE/drugData/medDRA/meddra_15_0_english/MedAscii/
+
+#optimization parameters for each method
+DOMOUCHEL=0.92,0.137,1.236,0.026,0.8873
+PENGYUE = 1.602,0.118,0.026,0.236
+LFDRPENGYUE = 1.602,0.118,0.026,0.236
+NEWEBGM2=0.01,0.66,0.022,0.232,1.0429
+NEWEBGM1=0.7575,0.001,0.0011,0.0414,0.316,0.362,1.2305
+faersPath = /home/limeng/drugAE/drugData/zip/AERS_ASCII_2004Q2.ZIP,/home/limeng/drugAE/drugData/zip/AERS_ASCII_2004Q3.ZIP,/home/limeng/drugAE/drugData/zip/AERS_ASCII_2004q1.zip,/home/limeng/drugAE/drugData/zip/AERS_ASCII_2005Q1.ZIP,/home/limeng/drugAE/drugData/zip/aers_asci_2011q1.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2004q4.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2005q2.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2005q3.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2005q4.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2006q1.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2006q2.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2006q3.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2006q4.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2007q1.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2007q2.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2007q3.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2007q4.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2008q1.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2008q2.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2008q3.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2008q4.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2009_q2.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2009_q3.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2009q1.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2009q4.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2010q1.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2010q2.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2010q3.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2010q4.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2011q2.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2011q3.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2011q4.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2012q1.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2012q2.zip,/home/limeng/drugAE/drugData/zip/aers_ascii_2012q3.zip
