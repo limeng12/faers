@@ -8,6 +8,7 @@ runGui<-function(){
   
 }
 
+#run the gui in another interface, this is prefered.
 runGuiFork<-function(){
   path=system.file(package = "faers");
   #gui<-new(J("main.ccbb.faers.graphic.FaersAnalysisGui") );
