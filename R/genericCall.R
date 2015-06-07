@@ -33,7 +33,5 @@ genericCallSI<-function(inputName,functionName){
   
 }
 
-genericCallV<-function(functionName){
-
 
 

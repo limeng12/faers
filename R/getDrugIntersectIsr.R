@@ -32,6 +32,6 @@ getDrugIsrsMiddleTable<-function(inputDrugName){
 
 getDrugIsrs<-function(inputDrugName){
   
-  return(genericCallSI(inputDrugName,"searchEn$getIsrsFromDrugBankDrugName"));
+  return(genericCallSI(inputDrugName,"searchEn$getIsrsFromDrugBankDrugName") );
   
 }
