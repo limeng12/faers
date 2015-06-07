@@ -1,37 +1,40 @@
 
 getDrugIntersectIsr<-function(inputDrugNames){
-  
   return(genericCallLI(inputDrugNames,"intersectionSearchDrugsSIRUsingDrugBank"));
   
 }
 
 getDrugUnionIsr<-function(inputDrugNames){
-  
-  return(genericCallLI(inputDrugNames,"unionSearchIsrUsingDrugbank"));
+  return(genericCallLIL(inputDrugNames,"unionSearchIsrUsingDrugbank"));
   
 }
 
-
 getADEIntersectIsr<-function(inputDrugNames){
-  
-  return(genericCallLI(inputDrugNames,"intersectionSearchADEsUsingMedDRA"));
+  return(genericCallLIL(inputDrugNames,"intersectionSearchADEsUsingMedDRA"));
   
 }
 
 getAdeUnionIsr<-function(inputDrugNames){
-  
-  return(genericCallLI(inputDrugNames,"unionSearchIsrUsingMeddra"));
+  return(genericCallLIL(inputDrugNames,"unionSearchIsrUsingMeddra"));
   
 }
 
 getDrugIsrsMiddleTable<-function(inputDrugName){
-  
-  return(genericCallSI(inputDrugName,"searchEn$getIsrsFromDrugBankDrugNameMap"));
+  return(genericCallSIL(inputDrugName,"searchEn$getIsrsFromDrugBankDrugNameMap"));
   
 }
 
 getDrugIsrs<-function(inputDrugName){
-  
-  return(genericCallSI(inputDrugName,"searchEn$getIsrsFromDrugBankDrugName") );
+  return(genericCallSIL(inputDrugName,"searchEn$getIsrsFromDrugBankDrugName") );
   
 }
+
+#getIsrsUsingMeddra
+getAdeIsrs<-function(inputAdeName){
+  return(genericCallSIL(inputAdeName,"searchEn$getIsrsUsingMeddra") );
+  
+}
+
+
+
+

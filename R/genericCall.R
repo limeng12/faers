@@ -1,7 +1,7 @@
 
-genericCallLI<-function(inputNames,functionName){
+genericCallLIL<-function(inputNames,functionName){
   search<-J("main.ccbb.faers.core.Search")$getInstance();
-  cat( (search %instanceof% "main.ccbb.faers.core.Search") );
+  stopifnot( (search %instanceof% "main.ccbb.faers.core.Search") );
   
   names<-.jnew("java.util.ArrayList");
   #drugNames$add("LEPIRUDIN");  #drugNames$add("CETUXIMAB");
@@ -13,27 +13,24 @@ genericCallLI<-function(inputNames,functionName){
   #result<-search$intersectionSearchDrugsSIRUsingDrugBank(names);
   result<-eval( parse(text=paste("search$",functionName,"(names)",sep="") )  );
   
-  isrs<-sapply( result, function(item) item$intValue() );
-  
+  #isrs<-sapply( result, function(item) item$intValue() );
+  isrs<-hashToVector(result);
   return(isrs);
   
 }
 
-genericCallSI<-function(inputName,functionName){
+genericCallSIL<-function(inputName,functionName){
   search<-J("main.ccbb.faers.core.Search")$getInstance();
-  cat( (search %instanceof% "main.ccbb.faers.core.Search") );
+  stopifnot( (search %instanceof% "main.ccbb.faers.core.Search") );
   
   #result<-search$intersectionSearchDrugsSIRUsingDrugBank(names);
   result<-eval( parse(text=paste("search$",functionName,"(inputName)",sep="") )  );
   
-  isrs<-sapply( result, function(item) item$intValue() );
+  #isrs<-sapply( result, function(item) item$intValue() );
+  isrs<-hashToVector(result);
   
   return(isrs);
   
 }
 
-genericCallV<-function(){
-  
-  
-}
 
