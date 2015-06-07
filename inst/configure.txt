@@ -1,6 +1,6 @@
 #parameters for database
-user=root
-password=vas40ue
+user=wxy
+password=wxy
 host=rdc04.uits.iu.edu:3080
 database=drug
 
