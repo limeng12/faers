@@ -16,7 +16,7 @@ library(faers);
 connect();
 
 #search two drug's intersection report.
-getIntersectDrugNames(  c("DOXORUBICIN","LEPIRUDIN")  );
+getDrugIntersectIsr(  c("DOXORUBICIN","LEPIRUDIN")  );
 
 #editing the configurefile
 editConfigure();
