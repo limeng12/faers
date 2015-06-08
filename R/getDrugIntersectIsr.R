@@ -1,6 +1,6 @@
 
 getDrugIntersectIsr<-function(inputDrugNames){
-  return(genericCallLI(inputDrugNames,"intersectionSearchDrugsSIRUsingDrugBank"));
+  return(genericCallLIL(inputDrugNames,"intersectionSearchDrugsSIRUsingDrugBank"));
   
 }
 
