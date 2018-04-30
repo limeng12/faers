@@ -1,7 +1,7 @@
 #parameters for database
-user=wxy
-password=wxy
-host=rdc04.uits.iu.edu:3080
+user=tester
+password=00000000
+host=35.185.186.173:3306
 database=drug
 
 #user=
